@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react'
 import { io } from 'socket.io-client'
 
-const socket = io('http://10.157.187.188:3001')
+const socket = io('https://discord-clone-server-lu5a.onrender.com')
 
 interface Message {
   username: string
