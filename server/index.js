@@ -8,7 +8,7 @@ app.use(cors())
 
 const server = http.createServer(app)
 const io = new socketio.Server(server, {
-  cors: { origin: 'http://localhost:5173' }
+  cors: { origin: '*' }
 })
 
 io.on('connection', (socket) => {
