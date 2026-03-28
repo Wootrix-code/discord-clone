@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react'
 import { io } from 'socket.io-client'
 
-const socket = io('http://localhost:3001')
+const socket = io('http://10.157.187.188:3001')
 
 interface Message {
   username: string
@@ -183,7 +183,7 @@ export default function App() {
             onKeyDown={e => e.key === 'Enter' && send()}
             placeholder={`Envoyer un message dans #${currentChannel}`}
             style={{
-              width: '100%', padding: '12px 16px', borderRadius: 8,
+              padding: '12px 16px', borderRadius: 8,
               border: 'none', background: '#40444b', color: 'white',
               fontSize: 15, outline: 'none', boxSizing: 'border-box',
             }}
